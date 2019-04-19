@@ -34,6 +34,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import in.encrust.devcom.AdapterClasses.PostsAdapter;
 import in.encrust.devcom.ModelClasses.PostModel;
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         //Navigation bar and toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Home");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Home");
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -225,8 +226,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
-                    String profilepicture = dataSnapshot.child("profilepicture").getValue().toString();
-                    String username = dataSnapshot.child("username").getValue().toString();
+                    String profilepicture = Objects.requireNonNull(dataSnapshot.child("profilepicture").getValue()).toString();
+                    String username = Objects.requireNonNull(dataSnapshot.child("username").getValue()).toString();
 
                     navHeaderUsername.setText(username);
                     Glide.with(getApplicationContext()).load(profilepicture).into(navHeaderProfile);
