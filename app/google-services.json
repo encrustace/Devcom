@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "689259631729",
+    "firebase_url": "https://encrustdevcom.firebaseio.com",
+    "project_id": "encrustdevcom",
+    "storage_bucket": "encrustdevcom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689259631729:android:ed7ece83387ae9cb",
+        "android_client_info": {
+          "package_name": "in.encrust.devcom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689259631729-j7nmnia1bhi5f58o8ejtd859lu1sohrr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.encrust.devcom",
+            "certificate_hash": "0ec5b36201e0a73a4675387756f8e4cc6fede785"
+          }
+        },
+        {
+          "client_id": "689259631729-4meo1g9l3edvf22739o38prkocjna0hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPODWnyDG5V2Z0e54pDmSfbKGjTcOiAVw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689259631729-4meo1g9l3edvf22739o38prkocjna0hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Terms">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/terms_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:title="Terms &amp; Conditions"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/terms_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="\n
+        * Payment will be made in two parts.\n\n
+        * Payment will be through the admin only.\n\n
+        * Payment can only be made through Paytm or UPI.\n\n
+        * The first half of the payment will be made by the \n
+          customer  to the admin once the customer \n
+          chooses the developer.\n\n
+        * The developer will receive this half of payment once \n
+          the developer uploads the project to the admin.\n\n
+        * To download the files uploaded by the developer\n
+          the customer has to make a payment of the\n
+          remaining amount.\n\n
+        * The amount will then be transferred to the\n
+          developer within 7 working days if no\n
+          complains arise from the customer side."
+        app:layout_constraintTop_toBottomOf="@+id/terms_toolbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

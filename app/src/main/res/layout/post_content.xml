@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_content_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:foreground="@drawable/ripple"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/spinner_background">
+
+
+        <ImageView
+            android:id="@+id/post_content_profilepicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_person"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/post_content_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="User name"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/post_content_profilepicture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/post_content_posttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Time"
+            android:textColor="@color/secondaryText"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/post_content_profilepicture"
+            app:layout_constraintTop_toBottomOf="@id/post_content_username" />
+
+        <TextView
+            android:id="@+id/post_content_postbudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Post Budget"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@+id/post_content_posttime"
+            app:layout_constraintTop_toBottomOf="@+id/post_content_username" />
+
+        <TextView
+            android:id="@+id/post_content_postname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:padding="3sp"
+            android:text="Post name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/post_content_profilepicture"
+            app:layout_constraintTop_toBottomOf="@+id/post_content_posttime" />
+
+
+        <TextView
+            android:id="@+id/post_content_postdescription"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="12dp"
+            android:padding="16dp"
+            android:text="Post description"
+            android:textColor="@color/secondaryText"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_content_profilepicture" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

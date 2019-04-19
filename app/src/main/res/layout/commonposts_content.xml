@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/commonposts_content_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:padding="8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/commonposts_content_const1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/spinner_background"
+        android:clickable="true"
+        android:foreground="@drawable/ripple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/commonposts_content_profilepicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/commonposts_content_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:foreground="@drawable/ripple"
+            android:hint="User Name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commonposts_content_profilepicture" />
+
+
+        <TextView
+            android:id="@+id/commonposts_content_postdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Post Date"
+            android:padding="8dp"
+            app:layout_constraintStart_toEndOf="@+id/commonposts_content_username"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/commonposts_content_postname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Post Name"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/commonposts_content_username"
+            app:layout_constraintTop_toBottomOf="@+id/commonposts_content_postdate" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="#A8A8A8"
+            app:layout_constraintTop_toBottomOf="@+id/commonposts_content_username" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/commonposts_content_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:hint="One"
+            android:padding="8dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/commonposts_content_button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:hint="Two"
+            android:padding="8dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/commonposts_content_button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:hint="Three"
+            android:padding="8dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
